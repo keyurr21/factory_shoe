@@ -1,0 +1,202 @@
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: 150px 1fr 30px;
+
+
+  height: 100vh;
+  margin: 0;
+  width: 100%;
+}
+
+#pageHeader {
+  grid-area: header;
+  background: #ffffff;
+
+}
+#pageHeader h1{
+	text-align: left;
+	color: white;
+}
+header img {
+	padding: 20px 0px 0px 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#main{
+	grid-area:main;
+	display: grid;
+    grid-template-areas:
+    "aside section ads";
+    grid-template-columns: 20% 60% 20%;
+	
+
+}
+#section{
+	grid-area: section;
+    background-color: #ffffff;
+}
+#pageFooter {
+  grid-area: footer;
+  color:white;
+  background: black;
+  margin-top:1px;
+}
+#article { 
+  
+  background-color: #ffffff;
+}
+#aside{ 
+  grid-area: aside; 
+  background: #ffffff;
+  margin-right: 1px;
+}
+#aside img{
+	width: 20%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+}
+#aside h3{
+	text-align: center;
+	padding-top:0;
+	margin-top:0;
+	color: black;
+	text-decoration: none;
+}
+#aside a{
+	text-decoration: none;
+}	
+#siteAds { 
+  grid-area: ads; 
+  background: white;
+ margin-left: 1px;
+}
+#nav_menu{
+	margin-top:19px;
+    width:100%;
+	color: #ffffff;	
+}
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+
+}
+#nav_menu ul li {
+	float: left;
+    width: 20%;
+}
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+	border: 0.2px solid white;
+    margin:0;
+    margin:0;
+}
+#nav_menu a.current {
+	color: ;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+	width: 20%;
+}
+#nav_menu ul li ul li {
+	float: none;
+    width:100%;
+}
+#nav_menu ul ul li ul{
+	position: absolute;
+	left: 100%;
+	width:100%;
+}
+#nav_menu ul ul li ul.Sub1{
+	top:0;
+}
+#nav_menu ul ul li ul.Sub2{
+	top:67%;
+}
+#nav_menu ul ul li ul.Sub3{
+	top:75%;
+}
+
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+#article p{
+	color: black;
+	padding-left: 1em;
+	padding-right: 2em;
+}
+#article h1{
+	color: red;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 40px;
+}
+#article h2{
+	color: blue;
+	text-align: left;
+	margin-top: 10px;
+	font-size: 20px;
+	padding-left: 16px;
+    padding-top: 20px;
+}
+#homepic{
+	width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	border: 0.2em solid black;
+}
+
+#sidepic{
+	width: 600%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	border: 0.2em solid black;
+}
+
+#hq{
+	width: 60%;
+	float: right;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border: 0.1em solid black;
+}
+#siteAds h2{
+	color: red;
+	text-align: center;
+}
+#siteAds p{
+	padding-left: 2em;
+	padding-right: 2em;
+}
+#siteAds a{
+	text-decoration: none;
+	margin: auto;
+	
+}
+#siteAds a.hover{
+	text-decoration: italic;
+}
